@@ -2,10 +2,11 @@
   # This action creates/updates `v[major]` and `v[major].[minor]` tags
   name: Create release tags
 
-  on:
-    release:
-      types: [released]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+#   on:
+#     release:
+#       types: [released]
+# 
   permissions:
     contents: write
 
