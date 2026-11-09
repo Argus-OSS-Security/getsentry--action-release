@@ -4,17 +4,18 @@
 # On mismatch this action fails
 name: Verify dist
 
-on:
-  push:
-    branches:
-      - master
-      - release/**
-    paths-ignore:
-      - "**.md"
-  pull_request:
-    paths-ignore:
-      - "**.md"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#       - release/**
+#     paths-ignore:
+#       - "**.md"
+#   pull_request:
+#     paths-ignore:
+#       - "**.md"
+# 
 jobs:
   check-dist:
     name: Verify dist/index.js file

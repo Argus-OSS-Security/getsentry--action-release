@@ -1,16 +1,17 @@
 name: 'Action: Prepare Release'
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: Version to release (or "auto")
-        required: false
-      force:
-        description: Force a release even when there are release-blockers
-        required: false
-      merge_target:
-        description: Target branch to merge into
-        required: false
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       version:
+#         description: Version to release (or "auto")
+#         required: false
+#       force:
+#         description: Force a release even when there are release-blockers
+#         required: false
+#       merge_target:
+#         description: Target branch to merge into
+#         required: false
 permissions:
   contents: write
   pull-requests: write
